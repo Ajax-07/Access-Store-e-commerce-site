@@ -19,7 +19,6 @@
 >  * sublime text
 
 #### Tool 
-> * HTML
 > * CSS 
 > * JavaScript
 > * SQL Database
