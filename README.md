@@ -23,5 +23,4 @@
 > * CSS 
 > * JavaScript
 > * SQL Database
-> * PHP (if required)hjtuydiguhoijasbhvdhgqcry3tqywdijKLEHVJFWHBDSNKX
-IDHIUGIWGIUWHIUHIUYDYDIDK
+> * PHP (if required)
