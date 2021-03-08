@@ -17,3 +17,10 @@
 >  * VS code 
 >  * Atom 
 >  * sublime text
+
+#### Tool 
+> * HTML
+> * CSS 
+> * JavaScript
+> * SQL Database
+> * PHP (if required)
