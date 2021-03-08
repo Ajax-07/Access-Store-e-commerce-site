@@ -19,7 +19,7 @@
 >  * sublime text
 
 #### Tool 
-> * CSS 
+
 > * JavaScript
 > * SQL Database
 > * PHP (if required)
