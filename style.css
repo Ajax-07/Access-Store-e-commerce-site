@@ -282,7 +282,7 @@ a{
 }
 .footer-col-2 img{
     width: 180px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .footer-col-3,.footer-col-4{
     flex-basis: 12%;
