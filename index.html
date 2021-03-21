@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <title>Acces Store</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,7 +21,7 @@
                     </div>
                     <!-- Navigation bar -->
                     <nav>
-                        <ul>
+                        <ul id="menuBar">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="product.html">Products</a></li>
                             <li><a href="#">Services</a></li>
@@ -29,6 +30,7 @@
                         </ul>
                     </nav>
                     <img src="images/cart.png" alt="This Is Cart" height="30px" width="30px">
+                    <img src="images/menu.png" alt="menu" class="menu-icon" onclick="menuToggal()">
                 </div>
                 <div class="row">
                     <div class="col-2">
@@ -48,7 +50,7 @@
 
         <!--     FEATURE CATEGORY -->
         <div class="categories">
-            <h2>Feature Services</h2>
+            <h2 class="title">Featured Services</h2>
             <div class="slider">
                 
                 <div class="slider1">
@@ -79,7 +81,7 @@
 
         <!--    Feature Products   -->
         <div class="products">
-            <h2>Featured Products</h2>
+            <h2 class="title">Featured Products</h2>
             <div class="row">
                 <div class="col-4">
                     <img src="images/mobiles.jpg" alt="mobile">
@@ -151,36 +153,38 @@
         </div>
     <!----------------------------FOTTER------------------------->
     <div class="footer">
-        <div class="row">
-            <div class="footer-col-1">
-                <h3>Download Our App</h3>
-                <p>  Download app for Android and ios mobile phones.</p>
-                <div class="app-logo">
-                    <img src="images/playstore.png" alt="playstore">
-                    <img src="images/apple.png" alt="appstore">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>  Download app for Android and ios mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="images/play.png" alt="playstore">
+                        <img src="images/apple.png" alt="appstore">
+                    </div>
                 </div>
-            </div>
-        
-            <div class="footer-col-2">
-                <img src="images/logoimg.png" alt="logo" height="25%">
-                <p> This website uses cookies to improve your experience.</p>
-            </div>
-            <div class="footer-col-3">
-                <h3>Useful Link</h3>
-               <ul>
-                   <li>Coupons</li>
-                   <li>Return policy</li>
-                   <li>Join us</li>
-               </ul>
-            </div>
-            <div class="footer-col-4">
-                <h3>Follow-us</h3>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Twitter</li>
-                    <li>Youtube</li>
-                </ul>
+            
+                <div class="footer-col-2">
+                    <img src="images/logoimg.png" alt="logo" height="25%">
+                    <p> This website uses cookies to improve your experience.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Link</h3>
+                   <ul>
+                       <li>Coupons</li>
+                       <li>Return policy</li>
+                       <li>Join us</li>
+                   </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow-us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
             </div>
             <hr>
             <p class="copyright">
@@ -188,5 +192,20 @@
             </p>
         </div>
     </div>
+
+    <!-- Menu toggler -->
+    <script>
+        var menuItems = document.getElementById("menuBar");
+        menuItems.style.maxHeight = "0%";
+
+        function menuToggal(){
+            if(menuItems.style.maxHeight == "0%"){
+                menuItems.style.maxHeight = "100%";
+            }
+            else{
+                menuItems.style.maxHeight = "0%";
+            }
+        }
+    </script>
     </body>
 </html>

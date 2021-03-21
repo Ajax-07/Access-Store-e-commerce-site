@@ -20,8 +20,8 @@
                         <img src="images/logo.png" alt="This is logo" width="170px">
                     </div>
                     <!-- Navigation bar -->
-                    <nav>
-                        <ul>
+                    <nav >
+                        <ul id="menuBar">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#">Products</a></li>
                             <li><a href="#">Services</a></li>
@@ -30,12 +30,13 @@
                         </ul>
                     </nav>
                     <img src="images/cart.png" alt="This Is Cart" height="30px" width="30px">
+                    <img src="images/menu.png" alt="menu" class="menu-icon" onclick="menuToggal()">
                 </div>                
             </div>
 
         <div class="products">   
             <div class="row row-2">
-                <h2>All Product</h2>
+                <h2 >All Product <hr></h2> 
                 <select>
                     <option> Default by sorting</option>
                     <option> Sort by pricing</option>
@@ -219,7 +220,7 @@
                 <h3>Download Our App</h3>
                 <p>  Download our app for Android and ios phones.</p>
                 <div class="app-logo">
-                    <img src="images/playstore.png" alt="playstore">
+                    <img src="images/play.png" alt="playstore">
                     <img src="images/apple.png" alt="appstore">
                 </div>
             </div>
@@ -251,7 +252,19 @@
             </p>
         </div>
     </div>
-    
+    <script>
+        var menuItems = document.getElementById("menuBar");
+        menuItems.style.maxHeight = "0px";
+
+        function menuToggal(){
+            if(menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
     </body>
 
 </html>
